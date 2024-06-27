@@ -1,0 +1,150 @@
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #fff;
+}
+
+
+.sidebar {
+    height: 100vh;
+    background: rgb(40, 39, 39);
+    color: white;
+}
+
+/* .nav-pills li a:hover {
+    background-color: rgb(25, 89, 25);
+} */
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: rgb(25, 89, 25);
+}
+
+
+.dashboard-cards {}
+
+.dash-board-item {
+    margin: 5px;
+    height: 200px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.dash-board-item-4 {
+    margin: 5px;
+    height: 130px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0.6rem;
+    transform: scale(0);
+    transition: transform 1.2s ease-out, opacity 0.5s ease-out;
+}
+
+.dash-board-item-1 {
+    margin: 5px;
+    height: 130px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #1d48d5, #0b8cc4);
+    box-shadow: 2px 2px 0.6rem;
+    transform: scale(0);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.dash-board-item-2 {
+    margin: 5px;
+    height: 130px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #66c45d, #7bfeab);
+    box-shadow: 2px 2px 0.6rem;
+    transform: scale(0);
+    transition: transform 0.8s ease-out, opacity 0.5s ease-out;
+}
+
+
+.dash-board-item-3 {
+    margin: 5px;
+    height: 130px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #f36112, #f2ae8e);
+    box-shadow: 2px 2px 0.6rem;
+    transform: scale(0);
+    transition: transform 1.0s ease-out, opacity 0.5s ease-out;
+}
+
+.bg-dark {
+    box-shadow: 2px 2px 0.6rem
+}
+
+.btnTest {
+    padding: 15px;
+    transform: scale(0);
+    transition: transform 1.5s ease-out, opacity 0.5s ease-out;
+}
+
+
+.th-1 {
+    background-color: #15940a;
+}
+
+table .loading-data {
+    width: 100%;
+    text-align: center;
+    /* Center the image within the table cell */
+}
+
+.table-custom {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform 1.8s ease-out, opacity 0.5s ease-out;
+}
+
+.table-custom th,
+.table-custom td {}
+
+.table-custom thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.table-custom thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.table-custom tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.table-custom tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.table-motion-company{
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform 1.8s ease-out, opacity 0.5s ease-out;
+}
+
+.table-motion-report{
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform 1.8s ease-out, opacity 0.5s ease-out;
+}

@@ -1,0 +1,124 @@
+{
+    "contents": [
+        {
+            "id": 1,
+            "checklistName": "Security Audit",
+            "checkListItemDTO": [
+                {
+                    "id": 1,
+                    "checklistItemName": "Firewall Configuration",
+                    "value": 10.0,
+                    "priorityLevel": "HIGH"
+                },
+                {
+                    "id": 2,
+                    "checklistItemName": "User Access Control",
+                    "value": 20.0,
+                    "priorityLevel": "LOW"
+                },
+                {
+                    "id": 3,
+                    "checklistItemName": "Data Encryption",
+                    "value": 30.0,
+                    "priorityLevel": "MEDIUM"
+                },
+                {
+                    "id": 4,
+                    "checklistItemName": "Software Updates",
+                    "value": 40.0,
+                    "priorityLevel": "HIGH"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "checklistName": "Compliance Review",
+            "checkListItemDTO": [
+                {
+                    "id": 1,
+                    "checklistItemName": "Regulatory Documentation",
+                    "value": 15.0,
+                    "priorityLevel": "HIGH"
+                },
+                {
+                    "id": 2,
+                    "checklistItemName": "Policy Review",
+                    "value": 25.0,
+                    "priorityLevel": "MEDIUM"
+                },
+                {
+                    "id": 3,
+                    "checklistItemName": "Training Programs",
+                    "value": 35.0,
+                    "priorityLevel": "LOW"
+                },
+                {
+                    "id": 4,
+                    "checklistItemName": "Incident Response Plan",
+                    "value": 45.0,
+                    "priorityLevel": "HIGH"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "checklistName": "System Maintenance",
+            "checkListItemDTO": [
+                {
+                    "id": 1,
+                    "checklistItemName": "Backup Verification",
+                    "value": 12.0,
+                    "priorityLevel": "MEDIUM"
+                },
+                {
+                    "id": 2,
+                    "checklistItemName": "System Performance Check",
+                    "value": 22.0,
+                    "priorityLevel": "HIGH"
+                },
+                {
+                    "id": 3,
+                    "checklistItemName": "Disk Cleanup",
+                    "value": 32.0,
+                    "priorityLevel": "LOW"
+                },
+                {
+                    "id": 4,
+                    "checklistItemName": "Hardware Inspection",
+                    "value": 42.0,
+                    "priorityLevel": "MEDIUM"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "checklistName": "Network Security",
+            "checkListItemDTO": [
+                {
+                    "id": 1,
+                    "checklistItemName": "VPN Configuration",
+                    "value": 13.0,
+                    "priorityLevel": "HIGH"
+                },
+                {
+                    "id": 2,
+                    "checklistItemName": "Intrusion Detection System",
+                    "value": 23.0,
+                    "priorityLevel": "HIGH"
+                },
+                {
+                    "id": 3,
+                    "checklistItemName": "Wireless Security",
+                    "value": 33.0,
+                    "priorityLevel": "MEDIUM"
+                },
+                {
+                    "id": 4,
+                    "checklistItemName": "Network Segmentation",
+                    "value": 43.0,
+                    "priorityLevel": "LOW"
+                }
+            ]
+        }
+    ]
+}

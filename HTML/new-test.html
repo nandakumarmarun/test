@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Animation</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <style>
+    /* body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .card {
+      width: 300px;
+      height: 200px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transform: scale(0);
+      opacity: 0;
+      transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    } */
+
+    .model-item-card {}
+
+    .model-item-container p-2 text-green m-2 bg-light shadow-lg rounded {}
+  </style>
+</head>
+
+<body>
+  <!-- <div class="card" id="card">
+  Card content goes here -->
+  <!-- <h2>Card Title</h2>
+    <p>Some content inside the card.</p> -->
+  <!-- </div> -->
+  <div class="container">
+    <div class="model-item-card">
+      <div class="title-text">
+        <h3>TEST DEATAILS</h3>
+        <hr>
+      </div>
+      <Label class="m-2">Company Name </Label>
+      <div class="model-item-container p-2 text-green m-2 bg-light shadow-lg rounded">
+        <Label>EENT</Label>
+      </div>
+      <Label class="m-2">Project Name</Label>
+      <div class="model-item-container p-2 text-green m-2 bg-light shadow-lg rounded">
+        <Label>NANDAKUMAR</Label>
+      </div>
+      <Label class="m-2">SystemNo</Label>
+      <div class="model-item-container p-2 text-green m-2 bg-light shadow-lg rounded">
+        <Label>356</Label>
+      </div>
+      <Label class="m-2">TestStatus</Label>
+      <div class="model-item-container p-2 text-green m-2 bg-light shadow-lg rounded">
+        <Label>Completed</Label>
+      </div>
+      <Label class="m-2">Security Level</Label>
+      <div class="model-item-container p-2 text-green m-2 bg-light shadow-lg rounded">
+        <Label>EXXCELlENT</Label>
+      </div>
+      <Label class="m-2">User </Label>
+      <div class="model-item-container p-2 text-green m-2 bg-light shadow-lg rounded">
+        <Label>EXXCELlENT</Label>
+      </div>
+      <Label class="m-2">Descirption </Label>
+      <div class="model-item-container p-2 text-green m-2 bg-light shadow-lg rounded">
+        <Label>Nandakumar</Label>
+      </div>
+      <Label class="m-2">Percentage </Label>
+      <div class="model-item-container p-2 text-green m-2 bg-light shadow-lg rounded">
+        <Label>80%</Label>
+      </div>
+    </div>
+    <h2 class="p-2 m-2">CheckList</h2>
+    <div class="check-list-conatiner p-2 m-2 bg-light shadow-lg rounded">
+      <div class="check-list-item-conatiner">
+        <h3 class=" p-2 m-2">Authorisation</h3>
+        <div class="form-check fs-6 mt-3"><input class="form-check-input" type="checkbox" value="302"
+            id="flexCheckChecked-302" data-checklistitemid="302" data-checklistid="252"><label
+            class="form-check-label lowpriority" for="flexCheckChecked-302">Path traversal Test</label>
+        </div>
+        <div class="form-check fs-6 mt-3"><input class="form-check-input" type="checkbox" value="352"
+            id="flexCheckChecked-352" data-checklistitemid="352" data-checklistid="252"><label
+            class="form-check-label moderatepriority" for="flexCheckChecked-352">Bypassing Authorisation scheama</label>
+        </div>
+      </div>
+    </div>
+    <div class="check-list-conatiner p-2 m-2 bg-light shadow-lg rounded">
+      <div class="check-list-item-conatiner">
+        <h3 class=" p-2 m-2">Authorisation</h3>
+        <div class="form-check fs-6 mt-3"><input class="form-check-input" type="checkbox" value="302"
+            id="flexCheckChecked-302" data-checklistitemid="302" data-checklistid="252"><label
+            class="form-check-label lowpriority" for="flexCheckChecked-302">Path traversal Test</label>
+        </div>
+        <div class="form-check fs-6 mt-3"><input class="form-check-input" type="checkbox" value="352"
+            id="flexCheckChecked-352" data-checklistitemid="352" data-checklistid="252"><label
+            class="form-check-label moderatepriority" for="flexCheckChecked-352">Bypassing Authorisation scheama</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#card').css({
+        transform: 'scale(1)',
+        opacity: '1'
+      });
+    });
+  </script>
+</body>
+
+</html>

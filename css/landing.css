@@ -1,0 +1,281 @@
+.carousel-item {
+    height: 100vh;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#about-image {
+    width: 480px;
+}
+
+.about-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.carousel-caption {
+    bottom: 200px;
+}
+
+.about .about-title h5 {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 75%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #fff;
+}
+
+.artcle-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.footer-top {
+    background: #111;
+    padding: 60px 0px
+}
+
+.footer-top p {
+    color: #999;
+    line-height: 25px;
+}
+
+.footer-top h5 {
+    font-size: 18px;
+    color: #fff;
+}
+
+.segment-two h5:before {
+    content: '|';
+    color: rgb(251, 254, 251);
+    padding-right: 10px;
+}
+
+.segment-three h5:before {
+    content: '|';
+    color: rgb(251, 254, 251);
+    padding-right: 10px;
+}
+
+.segment-three a {
+    background: #494848;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.segment-three a i {
+    font-size: 26px;
+    color: #fff;
+    padding: 10px 7px;
+}
+
+.segment-four h5:before {
+    content: '|';
+    color: rgb(251, 254, 251);
+    padding-right: 10px;
+}
+
+
+.segment-two ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.segment-two ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+
+.segment-two ul li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.footer-bottom-text {
+    text-align: center;
+    background: #000;
+    line-height: 75px;
+
+}
+
+.fe-title h5 {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.fe-images {
+    margin: 5px;
+    width: 45px;
+    height: 45px;
+}
+
+.fe-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: none;
+   
+}
+
+.fe-container{
+    background: #b3afaf;
+}
+
+/* .card-containers-1{
+      background-image: url('path/to/your/image.jpg');
+    background-size: cover; /* Cover the entire div */
+    /* background-repeat: no-repeat; /* Do not repeat the image */
+    /* background-position: center; Center the image */
+/* }  */
+
+
+
+/*===============carousel-Section================== */
+
+/* When viewport height is less than or equal to 968px */
+@media (max-width: 1400px) {
+    .carousel-item {
+        height: 85vh;
+    }
+
+    .carousel-caption {
+        bottom: 164px;
+    }
+
+}
+
+/* When viewport height is less than or equal to 968px */
+@media (max-width: 1200px) {
+    .carousel-item {
+        height: 65vh;
+    }
+
+    .carousel-caption {
+        bottom: 90px;
+    }
+
+}
+
+
+/* When viewport height is less than or equal to 968px */
+@media (max-width: 992px) {
+    .carousel-item {
+        height: 45vh;
+    }
+
+    .carousel-caption {
+        bottom: 45px;
+    }
+}
+
+/* When viewport height is less than or equal to 768px */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 27vh;
+    }
+
+    .carousel-caption {
+        bottom: 100px;
+    }
+}
+
+/* When viewport height is less than or equal to 576px */
+@media (max-width: 576px) {
+    .carousel-item {
+        height: 27vh;
+    }
+
+    .carousel-caption {
+        bottom: 80px;
+    }
+}
+
+
+
+
+
+
+
+/* -=================About section==================== */
+
+
+
+/* When viewport height is less than or equal to 968px */
+@media (max-width: 1400px) {
+    #about-image {
+        width: 480px;
+    }
+
+}
+
+/* When viewport height is less than or equal to 968px */
+@media (max-width: 1200px) {
+    #about-image {
+        width: 480px;
+    }
+
+}
+
+
+/* When viewport height is less than or equal to 968px */
+@media (max-width: 992px) {
+    #about-image {
+        width: 361px;
+    }
+
+}
+
+/* When viewport height is less than or equal to 768px */
+@media (max-width: 768px) {
+    #about-image {
+        width: 480px;
+    }
+
+}
+
+/* When viewport height is less than or equal to 576px */
+@media (max-width: 576px) {
+    #about-image {
+        width: 361px;
+    }
+
+}

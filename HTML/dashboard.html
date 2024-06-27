@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+      <div class="bg-dark col-auto col-md-3 col-md-4 col-xl-3 col-xxl-2">
+        <div class="bg-dark p-2">
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item mb-1 py-2 py-sm-0">
+              <a href="#" class="nav-link text-white">
+                <img src="../assets/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
+                <span class="fs-6 ms-3 d-none d-sm-inline c-user-name"></span>
+              </a>
+            </li>
+            <li class="nav-item py-2 py-sm-0">
+              <a href="#" class="nav-link active text-white" data-content="home">
+                <i class="fa-solid fa-house fs-6" style="color: #ffffff"></i><span
+                  class="fs-6 ms-3 d-none d-sm-inline">Home</span>
+              </a>
+            </li>
+            <li class="nav-item py-2 py-sm-0">
+              <a href="#" class="nav-link text-white" data-content="profile">
+                <i class="fa-solid fa-user fs-6" style="color: #ffffff"></i>
+                <span class="fs-6 ms-3 d-none d-sm-inline">Profile</span>
+              </a>
+            </li>
+            <li class="nav-item py-2 py-sm-0">
+              <a href="#" class="nav-link text-white" data-content="Report">
+                <i class="fa-solid fa-shield fs-6" style="color: #ffffff"></i>
+                <span class="fs-6 ms-2 d-none d-sm-inline">Test Report</span>
+              </a>
+            </li>
+            <li class="nav-item py-2 py-sm-0">
+              <a href="#" class="nav-link text-white" data-content="Companies">
+                <i class="fa-solid fa-building fs-6" style="color: #ffffff"></i><span
+                  class="fs-6 ms-3 d-none d-sm-inline">Companies</span>
+              </a>
+            </li>
+            <li class="nav-item py-2 py-sm-0">
+              <a href="#" class="nav-link text-white" data-content="logout">
+                <i class="fa-solid fa-right-from-bracket" style="color: #ffffff"></i><span
+                  class="fs-6 ms-3 d-none d-sm-inline">Logout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-9 col-md-9 col-xl-9 col-lg-9 col-xxl-10 min-vh-100" id="dashboard-container">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="LoadingModel2" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="d-flex justify-content-center">
+            <img src="../assets/loading/loading--unscreen.gif" style="width: 200px; height: 200px;" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade " id="ViewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">TEST DEATAILS</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container model-item-body">
+            <div class="model-item-card">
+              <Label class="m-2">Company Name </Label>
+              <div class="model-item-container p-2 text-green m-2 bg-light shadow-lg rounded">
+                <Label id ="comName"></Label>
+              </div>
+              <Label class="m-2">Project Name</Label>
+              <div class="model-item-container p-2 text-green m-2 bg-light shadow-lg rounded">
+                <Label id ="pgName" ></Label>
+              </div>
+              <Label class="m-2">SystemNo</Label>
+              <div class="model-item-container p-2 text-green m-2 bg-light shadow-lg rounded">
+                <Label id ="SystemNo" ></Label>
+              </div>
+              <Label class="m-2">TestStatus</Label>
+              <div class="model-item-container p-2 text-green m-2 bg-light shadow-lg rounded">
+                <Label id ="testStatus"></Label>
+              </div>
+              <Label class="m-2">Security Level</Label>
+              <div class="model-item-container p-2 text-green m-2 bg-light shadow-lg rounded">
+                <Label id ="testseclevel" ></Label>
+              </div>
+              <Label class="m-2">User </Label>
+              <div class="model-item-container p-2 text-green m-2 bg-light shadow-lg rounded">
+                <Label id ="testUser"></Label>
+              </div>
+              <Label class="m-2">Descirption </Label>
+              <div class="model-item-container p-2 text-green m-2 bg-light shadow-lg rounded">
+                <Label id ="description"></Label>
+              </div>
+              <Label class="m-2">Percentage </Label>
+              <div class="model-item-container p-2 text-green m-2 bg-light shadow-lg rounded">
+                <Label id ="testPercentage"></Label>
+              </div>
+            </div>
+            <div >
+              <h2 id= "title-che" class="title-che p-2 m-1"></h2>
+            </div>
+            <div class="CheckList-items">
+
+            </div>
+          </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"></script>
+
+  <script>
+    var ContextPath = "";
+    var API_PATH = "";
+
+    $.getJSON("../config.json", function (config) {
+      ContextPath = config.HOST;
+      port = config.PORT
+      API_PATH = ContextPath + ":" + port;
+      console.log("properties" + port);
+      console.log("HOST:", config.HOST);
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../js/dashboard.js"></script>
+  <script src="../js/companies.js"></script>
+  <script src="../js/testReport.js"></script>
+  <script src="../js/profile.js"></script>
+</body>
+
+</html>

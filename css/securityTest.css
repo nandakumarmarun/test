@@ -1,0 +1,82 @@
+body {
+    /* Center the image */
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+.step-indicator {
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+.step-indicator>div {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 5px;
+}
+
+.step-indicator>.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.r-1 {
+    width: 100%;
+}
+
+.c-1 {}
+
+.f-1 {}
+
+
+.btn-1 {
+    width: 150px;
+    height: 45px;
+}
+
+
+.sidebar {
+    height: 100vh;
+    background: rgb(40, 39, 39);
+    color: white;
+}
+
+.sidebar-item {
+    padding: 5px;
+    font-size: 10px;
+}
+
+
+.sidebar-item.active {
+    background: #03c24c;
+    border-radius: 5px;
+    color: rgb(245, 245, 249);
+    padding: 5px;
+    font-size: 20px;
+}
+
+
+.highpriority{
+    color: red;
+    font-weight: 700;
+}
+
+.moderatepriority{
+    color: rgb(19, 195, 230);
+    font-weight: 700;
+}
+
+.lowpriority{
+    color: rgb(6, 119, 46);
+    font-weight: 700;
+}

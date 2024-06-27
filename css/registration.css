@@ -1,0 +1,57 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../bg/regbg2.jpg');
+    background-size: cover;
+    /* Cover the entire div */
+    background-repeat: no-repeat;
+    /*Do not repeat the image*/
+    background-position: center;
+    /* Center the image */
+
+}
+
+.c-0 {
+    height: 80vh;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 16.2px;
+    background: #ffffff;
+}
+
+
+.banner-container {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-1 {
+    width: 550px;
+}
+
+.c-2 {
+    width: 550px;
+    height: 361px;
+    /* background-image: url('../bg/registrtaion.gif'); */
+    background-image: url('../bg/reg.gif');
+    background-size: cover;
+    /* Cover the entire div */
+    background-repeat: no-repeat;
+    /*Do not repeat the image*/
+    background-position: center;
+    /* Center the image */
+}
+
+.my-error-class {
+    color: #FF0000;
+    /* red */
+}
+
+.my-valid-class {
+    color: #00CC00;
+    /* green */
+}
